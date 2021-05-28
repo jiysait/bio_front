@@ -5,17 +5,14 @@ import { Button, Card, CardContent, Form } from 'semantic-ui-react'
 export default function SingleFileUpload() {
 
     const [file, setFile] = useState()
-    const [name, setName] = useState()
 
     const handleChange = e => {
         setFile(e.target.files[0])
-        setName(e.target.files[0].name)
     }
 
     const handleSubmit = e => {
         let url = 'http://localhost:8000/examples/single-file-upload'
         let form_data = new FormData()
-        form_data.append('name', name)
         form_data.append('file', file)
 
         axios.post(
