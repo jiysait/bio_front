@@ -36,7 +36,7 @@ export default function MultipleFileUpload() {
     }
 
     return (
-        <Card>
+        <Card centered>
             <CardContent>
                 <Form onSubmit={handleSubmit}>
                     <Form.Field>

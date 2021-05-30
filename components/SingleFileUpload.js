@@ -29,7 +29,7 @@ export default function SingleFileUpload() {
     }
 
     return (
-        <Card>
+        <Card centered>
             <CardContent>
                 <Form onSubmit={handleSubmit}>
                     <Form.Field>
