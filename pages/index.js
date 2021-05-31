@@ -12,6 +12,7 @@ export default function Home() {
         <li><Link href={'/upload/'}>Single File Upload</Link></li>
         <li><Link href={'/upload/'}>Multiple Files Upload</Link></li>
         <li><Link href={'/ebs/workspace'}>EBS Workspace</Link></li>
+        <li><Link href={'/uniqueness'}>Guaranteed Uniqueness of Files</Link></li>
       </ul>
     </Container>
   )

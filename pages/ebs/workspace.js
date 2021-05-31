@@ -1,7 +1,8 @@
-import { useState } from "react";
-import { Grid, Item, Tab } from "semantic-ui-react";
+import { useState } from "react"
+import { Grid, Item, Tab } from "semantic-ui-react"
 import CreateAnalysis from "../../components/CreateAnalysis"
-import CreateSequence from "../../components/CreateSequence";
+import CreateSequence from "../../components/CreateSequence"
+import ReadAllSequences from "../../components/ReadAllSequences"
 
 const panes_analysis = [
     { menuItem: 'Add', render: () => <Tab.Pane><CreateAnalysis /></Tab.Pane> },
@@ -10,7 +11,7 @@ const panes_analysis = [
 
 const panes_sequence = [
     { menuItem: 'Add', render: () => <Tab.Pane><CreateSequence /></Tab.Pane> },
-    { menuItem: 'List', render: () => <Tab.Pane>List</Tab.Pane> },
+    { menuItem: 'List', render: () => <Tab.Pane><ReadAllSequences /></Tab.Pane> },
 ]
 
 export default function Workspace() {
